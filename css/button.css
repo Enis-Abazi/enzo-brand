@@ -1,0 +1,46 @@
+.button {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width 0.5s, border-radius 0.5s;
+}
+
+.fa-solid {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 100px;
+}
+
+.button * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.25s;
+}
+
+.button:focus {
+    width: 30px;
+    background-color: #44c08a;
+    border-radius: 50%;
+}
+
+.button:focus .text {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.button:focus .fa-solid {
+    opacity: 1;
+    transition: 0.5s;
+    width: 100px;
+}

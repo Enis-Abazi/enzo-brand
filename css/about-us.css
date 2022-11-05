@@ -1,0 +1,368 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/orderbackground-denoised_sharpened_upscaled_x4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Robot Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Robot Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    color: white;
+    font-family: "Roboto Bold";
+}
+
+header a h1 {
+    font-size: 50px;
+    font-family: "Robot Bold";
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    column-gap: 40px;
+    color: white;
+    font-family: "Robot Black";
+}
+
+ul li {
+    column-gap: 20px;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    color: white;
+}
+
+ul li:hover {
+    border-bottom: 3px solid orange;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: 0.3s ease-out all;
+    color: orange;
+}
+
+.icon {
+    font-size: 30px;
+    color: white;
+}
+
+.icon:hover {
+    color: orange;
+    font-size: 35px;
+    transition: 0.4s ease-in-out all;
+}
+
+.icon::before {
+    border-bottom: 1px solid white;
+}
+
+.mainSection {
+    padding: 150px;
+}
+
+.mainSection .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.mainSection .row .col {
+    flex-basis: 50%;
+}
+
+.boutique {
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0 5px 15px grey;
+}
+
+.boutique:hover {
+    box-shadow: 0 5px 35px grey;
+    transition: 0.3s ease-in-out all;
+}
+
+.mainSection h1,
+h3,
+p {
+    text-align: center;
+    color: white;
+    font-family: "Robot Bold";
+}
+
+.mainSection h1 {
+    font-size: 35px;
+    border-bottom: 1px solid orange;
+}
+
+.mainSection h3 {
+    font-size: 20px;
+}
+
+.mainSection p {
+    font-size: 18px;
+}
+
+.mainSection span {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+footer {
+    backdrop-filter: blur(12px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Robot Black";
+}
+
+.last-section {
+    padding-left: 150px;
+    padding-right: 150px;
+    border-top: 1px solid grey;
+}
+
+.last-section .row {
+    display: flex;
+    justify-content: center;
+    column-gap: 250px;
+}
+
+.last-Section .row .col {
+    flex-basis: 33%;
+}
+
+footer .icons {
+    font-size: 75px;
+    color: white;
+}
+
+footer .icons:hover {
+    color: orange;
+    transition: 0.5s ease-in-out all;
+}
+
+footer .profiles {
+    color: white;
+    font-size: 75px
+}
+
+footer .profiles:hover {
+    color: orange;
+    transition: 0.5s ease-in-out all;
+}
+
+@media only screen and (max-width:650px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .boutique {
+        margin: 0;
+        width: 100%;
+    }
+    footer {
+        padding: 0;
+        margin: 0;
+    }
+    footer .last-section {
+        padding: 0;
+        margin: 0;
+    }
+    footer .last-section .row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 0;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:1000px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        flex-direction: row;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .boutique {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        flex-direction: row;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 150px;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 25px;
+        text-align: center;
+        align-items: center;
+    }
+    .mainSection .row .col {
+        flex-basis: 50%;
+    }
+    .mainSection .boutique {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1601px) and (max-width:1900px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        margin: 0;
+        padding: 0;
+    }
+    header { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul li { 
+        margin: 10px;
+    }
+     .icon {
+        font-size: 30px;
+        color: white;
+    }
+    .icon:hover {
+        color: orange;
+        font-size: 35px;
+        transition: 0.4s ease-in-out all;
+    }
+    .icon::before {
+        border-bottom: 1px solid white;
+    }
+    .mainSection { 
+        padding: 150px;
+        font-family: "Robot Bold";
+    }
+    .mainSection .row { 
+         display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+     }
+     .mainSection .row .col { 
+         flex-basis: 50%;
+     }
+}

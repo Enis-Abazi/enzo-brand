@@ -1,0 +1,536 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Robot Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Robot Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+body {
+    background-image: url(../images//stormseeker-SrtIO_uBlVI-unsplash-denoised_sharpened_upscaled_x2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    color: white;
+}
+
+header a h1 {
+    font-size: 50px;
+    font-family: "Robot Bold";
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    column-gap: 40px;
+    color: white;
+    font-family: "Robot Black";
+}
+
+ul li {
+    column-gap: 20px;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    color: white;
+}
+
+ul li:hover {
+    border-bottom: 3px solid orange;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: 0.3s ease-out all;
+    color: orange;
+}
+
+.icon {
+    font-size: 30px;
+    color: white;
+}
+
+.icon:hover {
+    color: orange;
+    font-size: 35px;
+    transition: 0.4s ease-in-out all;
+}
+
+.icon::before {
+    border-bottom: 1px solid white;
+}
+
+.mainSection {
+    padding: 150px;
+    font-family: "Robot Bold";
+}
+
+.mainSection .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainSection .row .col {
+    flex-basis: 50%;
+}
+
+.mainSection .row .col h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+.mainSection .row .col p {
+    color: grey;
+}
+
+.mainSection .col {
+    margin: 10px;
+}
+
+.mainSection .col h1 {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.mainSection .col h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.mainSection .col h5 {
+    font-size: 15px;
+    color: grey;
+}
+
+.underline {
+    border-bottom: 1px solid grey;
+}
+
+footer {
+    border: 1px solid grey;
+    backdrop-filter: blur(12px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Robot Black";
+}
+
+.last-Section {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.last-Section .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.last-Section .row .col {
+    flex-basis: 25%;
+    text-align: center;
+    align-items: center;
+}
+
+.last-Section .row h1,
+h2 {
+    color: white;
+}
+
+.footer-img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .bright {
+    color: white;
+}
+
+footer p {
+    color: grey;
+}
+
+.last-span {
+    color: orange;
+}
+
+@media only screen and (max-width:650px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 55px;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    header ul li {
+        margin: 10px;
+        font-size: 30px;
+    }
+    header i {
+        font-size: 35px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .mainSection .col h5 {
+        font-size: 25px;
+    }
+    .mainSection .col h4 {
+        font-size: 35px;
+    }
+    .mainSection .col p {
+        font-size: 25px;
+    }
+    .mainSection i {
+        font-size: 40px;
+    }
+    .mainSection h2 {
+        font-size: 35px;
+    }
+    .last-Section {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .last-Section .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    footer span {
+        font-size: 25px;
+        color: orange;
+    }
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:1000px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header h1 {
+        font-size: 100px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    ul li {
+        margin: 10px;
+        font-size: 35px;
+    }
+    header i {
+        font-size: 50px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainSection .row .col {
+        flex-basis: 50%;
+    }
+    .mainSection .col h5 {
+        font-size: 30px;
+    }
+    .mainSection .col h1 {
+        font-size: 85px;
+    }
+    .mainSection .row .col p {
+        font-size: 30px;
+    }
+    .mainSection .col h4 {
+        font-size: 35px;
+    }
+    .mainSection .icon {
+        font-size: 50px;
+    }
+    footer .last-Section {
+        padding: 0;
+        margin: 0;
+    }
+    footer .last-Section .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    footer .last-Section .row .col {
+        flex-basis: 33%;
+    }
+    .last-Section .row h1,
+    h2 {
+        font-size: 30px;
+    }
+    footer p {
+        font-size: 25px;
+    }
+    footer span {
+        font-size: 25px;
+        color: orange;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        color: white;
+    }
+    header a h1 {
+        font-size: 50px;
+        font-family: "Robot Bold";
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        column-gap: 40px;
+        color: white;
+        font-family: "Robot Black";
+    }
+    ul li {
+        column-gap: 20px;
+        border-bottom: 1px solid white;
+        font-size: 25px;
+        color: white;
+    }
+    ul li:hover {
+        border-bottom: 3px solid orange;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: 0.3s ease-out all;
+        color: orange;
+    }
+    .icon {
+        font-size: 30px;
+        color: white;
+    }
+    .icon:hover {
+        color: orange;
+        font-size: 35px;
+        transition: 0.4s ease-in-out all;
+    }
+    .icon::before {
+        border-bottom: 1px solid white;
+    }
+    .mainSection {
+        padding: 150px;
+        font-family: "Robot Bold";
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainSection .row .col {
+        flex-basis: 50%;
+    }
+    .mainSection .row .col h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+    .mainSection .row .col p {
+        color: grey;
+    }
+    .mainSection .col {
+        margin: 10px;
+    }
+    .mainSection .col h1 {
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+    .mainSection .col h4 {
+        font-size: 20px;
+        color: white;
+    }
+    .mainSection .col h5 {
+        font-size: 15px;
+        color: grey;
+    }
+    .underline {
+        border-bottom: 1px solid grey;
+    }
+    footer {
+        border: 1px solid grey;
+        backdrop-filter: blur(12px);
+        overflow-x: hidden;
+        overflow-y: hidden;
+        font-family: "Robot Black";
+    }
+    .last-Section {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .last-Section .row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    .last-Section .row .col {
+        flex-basis: 25%;
+        text-align: center;
+        align-items: center;
+    }
+    .last-Section .row h1,
+    h2 {
+        color: white;
+    }
+    .footer-img {
+        width: 100%;
+        height: 100%;
+    }
+    footer .bright {
+        color: white;
+    }
+    footer p {
+        color: grey;
+    }
+}
+@media only screen and (min-width:1601px) and (max-width:1900px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    header { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul li { 
+        margin: 10px;
+    }
+      .icon {
+        font-size: 30px;
+        color: white;
+    }
+    .icon:hover {
+        color: orange;
+        font-size: 35px;
+        transition: 0.4s ease-in-out all;
+    }
+    .icon::before {
+        border-bottom: 1px solid white;
+    }
+    .mainSection { 
+        padding: 150px;
+    }
+    .mainSection .row { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+     .mainSection .row .col { 
+         flex-basis: 50%;
+     }
+     footer {
+    border: 1px solid grey;
+    backdrop-filter: blur(12px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Robot Black";
+     }
+}

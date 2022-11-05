@@ -1,0 +1,478 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/5932179-denoised_sharpened_upscaled_x4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Robot Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Robot Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    color: white;
+    font-family: "Roboto Bold";
+}
+
+header a h1 {
+    font-size: 50px;
+    font-family: "Robot Bold";
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    column-gap: 40px;
+    color: white;
+    font-family: "Robot Black";
+}
+
+ul li {
+    column-gap: 20px;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    color: white;
+}
+
+ul li:hover {
+    border-bottom: 3px solid orange;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: 0.3s ease-out all;
+    color: orange;
+}
+
+.icon {
+    font-size: 30px;
+    color: white;
+}
+
+.icon:hover {
+    color: orange;
+    font-size: 35px;
+    transition: 0.4s ease-in-out all;
+}
+
+.icon::before {
+    border-bottom: 1px solid white;
+}
+
+.mainSection {
+    padding: 150px;
+    font-family: "Robot Bold";
+}
+
+.mainSection .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    margin-top: 10px;
+}
+
+.mainSection .row .col {
+    flex-basis: 25%;
+}
+
+.mainSection .row .col h3,
+h4 {
+    color: white;
+}
+
+.mainSection h3 {
+    font-size: 30px;
+}
+
+.mainSection h4 {
+    font-size: 25px;
+}
+
+.mainSection h5 {
+    font-size: 18px;
+}
+
+span {
+    text-decoration: line-through;
+    color: orange;
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 25px rgb(34, 34, 34);
+    border-radius: 20px;
+}
+
+.products:hover {
+    box-shadow: 0 5px 25px #343434;
+    transition: 0.2s ease-in-out all;
+}
+
+footer {
+    backdrop-filter: blur(12px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Robot Black";
+}
+
+.last-section {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    border-top: 1px solid grey;
+}
+
+.last-section .row {
+    display: flex;
+    justify-content: center;
+    column-gap: 250px;
+}
+
+.last-Section .row .col {
+    flex-basis: 33%;
+}
+
+footer a .icons {
+    font-size: 75px;
+    color: white;
+}
+
+footer a .icons:hover {
+    color: orange;
+    transition: 0.5s ease-in-out all;
+}
+
+footer .profiles {
+    color: white;
+    font-size: 75px;
+}
+
+footer .profiles:hover {
+    color: orange;
+    transition: 0.5s ease-in-out all;
+}
+
+@media only screen and (max-width:650px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainSection .row .col {
+        margin: 10px;
+    }
+    .products {
+        width: 100%;
+    }
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+    footer .last-section {
+        padding-bottom: 0;
+    }
+    footer .last-section .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:1000px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    .mainSection .row .col {
+        flex-basis: 25%;
+    }
+    footer {
+        padding: 0;
+        margin: 0;
+    }
+    footer .last-section {
+        margin: 0;
+        padding: 0;
+    }
+    footer .last-section .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .last-section .row .col {
+        flex-basis: 33%;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        color: white;
+        font-family: "Roboto Bold";
+    }
+    header a h1 {
+        font-size: 50px;
+        font-family: "Robot Bold";
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        column-gap: 40px;
+        color: white;
+        font-family: "Robot Black";
+    }
+    ul li {
+        column-gap: 20px;
+        border-bottom: 1px solid white;
+        font-size: 25px;
+        color: white;
+    }
+    ul li:hover {
+        border-bottom: 3px solid orange;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: 0.3s ease-out all;
+        color: orange;
+    }
+    .icon {
+        font-size: 30px;
+        color: white;
+    }
+    .icon:hover {
+        color: orange;
+        font-size: 35px;
+        transition: 0.4s ease-in-out all;
+    }
+    .icon::before {
+        border-bottom: 1px solid white;
+    }
+    .mainSection {
+        padding: 150px;
+        font-family: "Robot Bold";
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 15px;
+    }
+    .mainSection .row .col {
+        flex-basis: 25%;
+    }
+    .mainSection .row .col h3,
+    h4 {
+        color: white;
+    }
+    .mainSection h3 {
+        font-size: 30px;
+    }
+    .mainSection h4 {
+        font-size: 25px;
+    }
+    .mainSection h5 {
+        font-size: 18px;
+    }
+    span {
+        text-decoration: line-through;
+        color: orange;
+    }
+    .products {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 25px rgb(34, 34, 34);
+        border-radius: 20px;
+    }
+    .products:hover {
+        box-shadow: 0 5px 25px #343434;
+        transition: 0.2s ease-in-out all;
+    }
+    footer {
+        backdrop-filter: blur(12px);
+        overflow-x: hidden;
+        overflow-y: hidden;
+        font-family: "Robot Black";
+    }
+    .last-section {
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 100px;
+        border-top: 1px solid grey;
+    }
+    .last-section .row {
+        display: flex;
+        justify-content: center;
+        column-gap: 250px;
+    }
+    .last-Section .row .col {
+        flex-basis: 33%;
+    }
+    footer .icons {
+        font-size: 75px;
+        color: white;
+    }
+    footer .icons:hover {
+        color: orange;
+        transition: 0.5s ease-in-out all;
+    }
+}
+@media only screen and (min-width:1601px) and (max-width:1900px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    header { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul li { 
+        margin: 10px;
+    }
+     .icon {
+        font-size: 30px;
+        color: white;
+    }
+    .icon:hover {
+        color: orange;
+        font-size: 35px;
+        transition: 0.4s ease-in-out all;
+    }
+    .icon::before {
+        border-bottom: 1px solid white;
+    }
+    .mainSection { 
+        padding: 150px;
+        font-family: "Robot Bold";
+    }
+    .mainSection .row { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .mainSection .row .col { 
+        flex-basis: 25%;
+    }
+    footer {
+    backdrop-filter: blur(12px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Robot Black";
+    }
+}

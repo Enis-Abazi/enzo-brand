@@ -1,0 +1,374 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Robot Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Robot Black";
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+body {
+    background-image: url(../images//tobias-van-schneider-DjCo6_Rr4nE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    color: white;
+}
+
+header a h1 {
+    font-size: 50px;
+    font-family: "Robot Bold";
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    column-gap: 40px;
+    color: white;
+    font-family: "Robot Black";
+}
+
+ul li {
+    column-gap: 20px;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    color: white;
+}
+
+ul li:hover {
+    border-bottom: 3px solid orange;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: 0.3s ease-out all;
+    color: orange;
+}
+
+.icon {
+    font-size: 30px;
+    color: white;
+}
+
+.icon:hover {
+    color: orange;
+    font-size: 35px;
+    transition: 0.4s ease-in-out all;
+}
+
+.icon::before {
+    border-bottom: 1px solid white;
+}
+
+.important {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.low-header {
+    font-size: 15px;
+}
+
+.mainSection {
+    padding: 100px;
+}
+
+.mainSection .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    color: white;
+    margin: 15px;
+}
+
+.mainSection .row .col {
+    flex: 25%;
+}
+
+.mainSection .product {
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0 5px 15px grey;
+}
+
+.mainSection .product:hover {
+    box-shadow: 0 5px 25px grey;
+    transition: 0.3s ease-out all;
+}
+
+.mainSection .btn {
+    text-align: end;
+}
+
+.mainSection .btn button {
+    width: 100px;
+    height: 40px;
+    margin-right: 150px;
+    background-color: orange;
+    color: black;
+    font-family: "'Robot Bold'";
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.button {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width 0.5s, border-radius 0.5s;
+}
+
+.fa-solid {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 100px;
+}
+
+.button * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.25s;
+}
+
+.button:focus {
+    width: 50px;
+    background-color: #44c08a;
+    border-radius: 50%;
+}
+
+.button:focus .text {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.button:focus .fa-solid {
+    opacity: 1;
+    transition: 0.5s;
+    width: 100px;
+}
+
+.mainSection .row .col input {
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid black;
+    background-color: orange;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: "Robot Bold";
+}
+
+.mainSection .row .col label {
+    font-size: 20px;
+    color: white;
+    font-family: "'Robot Bold'";
+}
+
+.mainSection .row .col h2,
+h3,
+h4,
+h5,
+p {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:650px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        flex-direction: column;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .product {
+        width: 100%;
+        height: 100%;
+    }
+    .mainSection .row .col {
+        border-bottom: 1px solid orange;
+        margin: 10px;
+    }
+    .mainSection .row .col h2,
+    h3,
+    h4,
+    h5,
+    p {
+        margin: 25px;
+    }
+    .mainSection .row .col button {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:1000px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 0;
+        margin: 0;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .mainSection .row .col {
+        border-bottom: 1px solid orange;
+        margin: 15px;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 100px;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:1601px) and (max-width:1900px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header ul li {
+        margin: 10px;
+    }
+    .mainSection {
+        padding: 100px;
+    }
+    .mainSection .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
